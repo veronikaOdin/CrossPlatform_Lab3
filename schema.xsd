@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="response">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="row">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="row" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="brth_yr" type="xs:integer" minOccurs="0"/>
+                                        <xs:element name="gndr" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="ethcty" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="nm" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="cnt" type="xs:integer" minOccurs="0"/>
+                                        <xs:element name="rnk" type="xs:integer" minOccurs="0"/>
+                                    </xs:sequence>
+                                    <xs:anyAttribute processContents="skip"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
